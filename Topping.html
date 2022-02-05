@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="shortcut icon" href="./images/icon.png">
+
+    </head>
+
+    <body style="margin-right: 1100px; margin-top: -0px;">
+
+        <title>Toppings</title>
+
+        <a href="Baking.html"> <button style="position: absolute; top: 630px; left: 440px; text-align: center; font-family:'Courier New', Courier, monospace; border: transparent; background-color: transparent; font-size: 1.5rem; font-stretch: condensed; color: rgb(202, 51, 51); font-weight: bold;"> Click here to send your pizza to the oven </button> </a>
+        
+        <h1 style="position: absolute; right: 400px;">Top up your pizza.</h1>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id = "Sauce">
+
+            <h5 style = "right: 100px"id = "Sauce">Sauce:</h5>
+
+            <img src="images/Crust.png" alt="Uh Oh" style="margin-top: -90px; right: 480px">
+
+            <input type="checkbox" name="Ranch" id ="Ranch" onclick="funcs()">
+            <label for="Ranch" id = "Ranch">Ranch</label>
+
+            <br>
+
+            <img src="images/Sauce/Ranch.png" alt="Marinara" width="175px" height="175px" style="left: 10px;">
+            <img src="images/Sauce/RanchRemoved.png" height="410px" width="420px" alt="Uh Oh" id = "RanchRemoved" style="display: none; position: absolute; top: 165px; left: 575px;">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <input type="checkbox" name="Marinara" id ="Marinara" onclick="func()">
+            <label for="Marinara" id = "Marinara">Marinara</label>
+
+            <br>
+
+            <img src="images/Sauce/Tomato Sauce.png" alt="Marinara" width="175px" height="175px" style="left: 10px;">
+            <img src="images/Sauce/TomatoSauceRemoved.png" height="410px" width="420px" alt="Uh Oh" id = "TomatoSauceRemoved" style="display: none; position: absolute; top: 165px; left: 575px;">
+
+        </div>
+
+        <div id = "Cheese" style="position:relative; right: -250px; margin-top: -345px;">
+
+            <h5>Cheese:</h5>
+
+            <input type="checkbox" name="Mozzarella" id="Mozzarella" onclick="Func()">
+            <label for="Mozzarella" id = "Mozzarella">Mozzarella</label>
+
+            <br>
+
+            <img src="images/Cheese/Mozzarella.png" alt="Uh Oh" width="180px" height="120px" style="position: relative; left: 0px;">
+            <img src="images/Cheese/MozzarellaRemoved.png" height="410px" width="420px" alt="Uh Oh" id = "MozzarellaRemoved" style="display: none; position: absolute; top: 0px; left: 320px;">
+
+            <br>
+
+            <input type="checkbox" name="Cheddar" id="Cheddar" onclick = "Fun()">
+            <label for="Cheddar" id = "Cheddar">Cheddar</label>
+
+            <br>
+
+            <img src="images/Cheese/Cheddar.png" alt="Uh Oh" width="180px" height="120px" style="position: relative; left: 0px;">
+            <img src="images/Cheese/CheddarRemoved.png" alt="Uh Oh" height="410px" width="420px" alt="Uh Oh" id = "CheddarRemoved" style="display: none; position: absolute; top: 0px; left: 320px;">
+
+            <br>
+
+            <input type="checkbox" name="Provolone" id="Provolone" onclick="Fnc()">
+            <label for="Provolone" id = "Provolone">Provolone</label>
+
+            <br>
+
+            <img src="images/Cheese/Provolone.png" alt="Uh Oh" width="180px" height="120px" style="position: relative; left: 0px;">
+            <img src="images/Cheese/ProvoloneRemoved.png" height="390px" width="420px" alt="Uh Oh" id = "ProvoloneRemoved" style="display: none; position: absolute; top: 25px; left: 320px;">
+
+        </div>
+
+        <div id = "Veggies" style="position: relative; right: -1050px; margin-top: -560px;">
+
+            <h5>Veggies:</h5>
+
+            <input type="checkbox" name="Mushroom" id="Mushroom" onclick="fn()">
+            <label for="Mushroom" id = "Mushroom">Mushrooms</label>
+
+            <br>
+
+            <img src="images/Veggies and Fruits/Mushrooms.png" alt="Uh Oh" height="80px" width="56px" style="position: relative; left: 50px">
+            <img src="images/Veggies and Fruits/MushroomRemoved.png" height="390px" width="420px" alt="Uh Oh" id = "MushroomRemoved" style="display: none; position: absolute; top: 15px; left: -490px;">
+
+            <br>
+
+            <input type="checkbox" name="Olive" id="Olive" onclick = "f()">
+            <label for="Olive" id = "Olive">Olives</label>
+
+            <br>
+
+            <img src="images/Veggies and Fruits/Olives.png" alt="Uh Oh" height="80px" width="150px" style="position: relative; left: 0px">
+            <img src="images/Veggies and Fruits/OliveRemoved.png" height="390px" width="410px" alt="Uh Oh" id = "OliveRemoved" style="display: none; position: absolute; top: 15px; left: -490px;">
+
+            <br>
+
+            <input type="checkbox" name="Onion" id="Onion" onclick = "fa()">
+            <label for="Onion" id = "Onion">Onions</label>
+
+            <br>
+
+            <img src="images/Veggies and Fruits/Onion.png" alt="Uh Oh" height="100px" width="120px" style="position: relative; left: 0px">
+            <img src="images/Veggies and Fruits/OnionRemoved.png" height="390px" width="400px" alt="Uh Oh" id = "OnionRemoved" style="display: none; position: absolute; top: 15px; left: -478px;">
+
+            <br>
+
+            <input type="checkbox" name="Pepper" id="Pepper" onclick = "fq()">
+            <label for="Pepper" id = "Pepper">Peppers</label>
+
+            <br>
+
+            <img src="images/Veggies and Fruits/Pepper.png" alt="Uh Oh" height="100px" width="120px" style="position: relative; left: 0px">
+            <img src="images/Veggies and Fruits/PepperRemoved.png" height="380px" width="390px" alt="Uh Oh" id = "PepperRemoved" style="display: none; position: absolute; top: 15px; left: -485px;">
+
+            <input type="checkbox" name="Tomato" id="Tomato" onclick="ft()" style="position: relative; right: -100px; top: -460px;">
+            <label for="Tomato" id = "Tomato" style="position: relative; right: -100px; top: -460px;">Tomatoes</label>
+
+            <br>
+
+            <img src="images/Veggies and Fruits/Tomato.png" alt="Uh Oh" height="120px" width="120px" style="position: relative; left: 225px; top: -450px;">
+            <img src="images/Veggies and Fruits/TomatoRemoved.png" height="390px" width="420px" alt="Uh Oh" id = "TomatoRemoved" style="display: none; position: absolute; top: 5px; left: -490px;">
+
+        </div>
+
+        <div id = "Meat" style="position: relative; right: -1510px; bottom: 720px;">
+
+            <h5>Meat:</h5>
+
+            <input type="checkbox" name="Chicken" id="Chicken" onclick="fc()">
+            <label for="Chicken" id = "Chicken">Chicken</label>
+
+            <br>
+
+            <img src="images/Meats/Chicken.png" alt="Uh Oh" height="150px" width="200px" style="position: relative; left: -10px;">
+            <img src="images/Meats/ChickenRemoved.png" height="390px" width="420px" alt="Uh Oh" id = "ChickenRemoved" style="display: none; position: absolute; top: 15px; left: -950px;">
+
+            <br>
+
+            <input type="checkbox" name="Pepperoni" id="Pepperoni" onclick = "fg()">
+            <label for="Pepperoni" id = "Pepperoni">Pepperoni</label>
+
+            <br>
+
+            <img src="images/Meats/Pepperoni.png" alt="Uh Oh" height = "125px" width="159px" style="position: relative; left: 10px;">
+            <img src="images/Meats/PepperoniRemoved.png" alt="Uh Oh" height="390px" width="420px" style="position: relative; right: 930px; top: -400px; display: none;" id = "PepperoniRemoved">
+
+            <br>
+
+        </div>
+
+    </body>
+
+</html>

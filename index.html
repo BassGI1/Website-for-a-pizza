@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="shortcut icon" href="images/icon.png">
+
+    </head>
+
+    <body style="margin: 0px;">
+        <title>
+            Website for a pizza.
+        </title>
+
+        <h1>
+            Welcome to the world's most entertaining website.
+        </h1>
+        
+        <p>
+            Get ready for the most life-changing experience. Enjoy.
+        </p>
+
+        <h3>
+            Please knead the dough.
+        </h3>
+        <img src="images/Dough.png" height = 500 width = 500 alt="Uh Oh" id="Dough">
+        <input type="button" value = "aa" id="countButton" style="position: relative;"/>
+
+        <p style="margin-top: 100px;">
+            Click the button below when you are finished kneading.
+        </p>
+
+        <a href="Post-Knead.html"> <img src="images/Next.png" height = 100 width = 100 alt="Uh Oh" id = "why" style="display: none; position: relative; right: -1310px; top: 32px;"></a>
+        <a href="Over-Knead.html"><img src="images/Next.png" height = 100 width = 100 alt="Uh Oh" id = "Too" style="display: none; position: relative; right: -1310px; top: 50px;"></a>
+        <a href="Under-Knead.html"><img src="images/Next.png" height = 100 width = 100 alt="Uh Oh" id = "Litt" style="display: none; position: relative; right: -1310px; top: 50px;"></a>
+
+        <script>
+
+            var count = 0;
+            var button = document.getElementById("countButton");
+            var much = document.getElementById("Too");
+            var corr = document.getElementById("why");
+            var not = document.getElementById("Litt");
+
+            button.onclick = function () {
+                var yes;
+                count++;
+                if (count > 10){
+                    much.style.display = "block";
+                    not.style.display = "none";
+                    corr.style.display = "none";
+                }
+                else if (count < 5){
+                    not.style.display = "block";
+                    much.style.display = "none";
+                    corr.style.display = "none";
+                }
+                else {
+                    not.style.display = "none";
+                    much.style.display = "none";
+                    corr.style.display = "block";
+                }
+            }
+
+        </script>
+
+        <p id = "no" style="position: relative;">This website is protected. Any attempt to rip off the contents of this website will be met by legal action (not really).</p>
+        <p id = "no" style="margin-top: 0px;">Created by Bassam El-Naggar.</p>
+        <a href="https://replit.com/@BelNagg" target = _blank id = "no" style="margin-top: -10px;">More (potentially silly) projects from me</a>
+
+    </body>
+
+</html>

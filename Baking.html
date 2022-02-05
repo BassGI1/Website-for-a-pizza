@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="shortcut icon" href="./images/icon.png">
+
+    </head>
+
+    <body>
+
+        <title>In the Oven</title>
+
+        <h1>Your pizza is ready for the oven.</h1>
+
+        <button onclick = "my()" id = "TimerButton">Click Here To Put your Pizza in the Oven.</button>
+
+        <p id = "Timer"><span id = "Min">30</span>:<span id = "Sec">00</span></p>
+
+        <script>
+
+            var yes;
+            var x = document.getElementById("Min").textContent;
+            var y = document.getElementById("Sec").textContent;
+    
+            var bu = parseInt(x);
+            var cu = parseInt(y);
+    
+            function des () {
+              if (cu > 0){
+                --cu;
+              }
+              else if (cu == 0){
+                cu = 59;
+                --bu;
+              }
+            
+              if (cu < 10){
+                document.getElementById("Sec").textContent = "0" + cu;
+              }
+              else {
+                document.getElementById("Sec").textContent = cu;
+              }
+
+                document.getElementById("Min").textContent = bu;
+    
+            }
+    
+            function my (){
+                var pic = document.getElementById("Skip");
+                var pib = document.getElementById("SkipButton");
+                pib.style.display = "block";
+                pic.style.display = "block";
+                yes = setInterval(des, 1000);
+            }
+    
+        </script>
+
+        <p id ="SkipButton" style="position: relative; right: 0px; bottom: 625px; display: none;">... or alternatively, you can click this button to skip this process.</p>
+        <a href="Fin.html"> <img src="images/Skip.png" height = "100px" width = "230px"alt="Uh Oh" id = "Skip" style="position: relative; right: -650px; bottom: 600px; display: none;"> </a>
+
+    </body>
+
+</html>

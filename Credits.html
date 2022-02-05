@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link rel="shortcut icon" href="./images/icon.png">
+    </head>
+
+    <body>
+
+        <h1 style="font-weight: bold; top: 300px; position: relative; text-align: center; display: none;" id="cred">Everything done by: Bassam El-Naggar</h1>
+
+        <a href="index.html"><img src="images/return.png" alt="Uh Oh" style="position: absolute; top: 100px; display: none; right: 550px;" id="ret"></a>
+        <p id="ik" style="font-weight: bold; top: 600px; position: absolute; right: 370px; display: none;">Click the button to return to the homepage.</p>
+
+        <script>
+
+            function idk () {
+                let pic = document.getElementById('ret');
+                let pr = document.getElementById('ik');
+                pic.style.display = "block";
+                pr.style.display = "block";
+            }
+            function id () {
+                let cre = document.getElementById('cred');
+                cre.style.display = "block";
+            }
+
+            function who () {
+                let cre = document.getElementById('cred');
+                cre.style.display = "none";
+            }
+
+            setTimeout(id, 1000);
+            setTimeout(who, 5000);
+            setTimeout(idk, 7000);
+
+        </script>
+
+    </body>
+
+
+</html>
